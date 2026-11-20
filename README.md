@@ -1,7 +1,8 @@
 # Perfis de veículos: carros semelhantes e casos atípicos de consumo e desempenho
 
-Projeto Final Individual — Mineração de Dados com apoio de LLM via API
-João Vitor Rossi Ferreira — 6º Semestre DSM — Fatec São José dos Campos
+**Projeto Final Individual — Mineração de Dados com apoio de LLM via API**
+
+João Vitor Rossi Ferreira · 6º Semestre DSM · Fatec São José dos Campos
 
 **Pergunta:** quais carros apresentam perfis técnicos mais semelhantes entre si, quais se afastam do comportamento geral e o que caracteriza esses casos atípicos?
 

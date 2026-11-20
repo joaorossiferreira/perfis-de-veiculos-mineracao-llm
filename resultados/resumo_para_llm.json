@@ -1,0 +1,529 @@
+{
+  "dataset": "Auto MPG (UCI) - modelos de carro dos anos-modelo 1970 a 1982; cada registro é um modelo em um ano",
+  "registros_analisados": 398,
+  "preparacao": {
+    "ausentes": "6 valores de potência ausentes, preenchidos com a mediana dos carros com o mesmo nº de cilindros",
+    "duplicadas": 0,
+    "marcas_corrigidas": "17 nomes de marca padronizados (ex.: vw/vokswagen -> volkswagen, chevy/chevroelt -> chevrolet)",
+    "atributos_na_distancia": [
+      "mpg",
+      "cylinders",
+      "displacement",
+      "horsepower",
+      "weight",
+      "acceleration",
+      "model_year"
+    ],
+    "padronizacao": "Z-score (sem ela o peso responderia por mais de 98% da distância)"
+  },
+  "carros_por_cilindros": {
+    "3": 4,
+    "4": 204,
+    "5": 3,
+    "6": 84,
+    "8": 103
+  },
+  "similaridade": {
+    "metrica": "distância Euclidiana nos 7 atributos padronizados",
+    "distancia_media_entre_dois_carros": 3.37,
+    "pares_mais_semelhantes": [
+      {
+        "carro_a": {
+          "modelo": "chevrolet chevette (78)",
+          "origem": "EUA",
+          "cilindros": 4,
+          "km_l": 12.75,
+          "peso_kg": 977,
+          "potencia_hp": 68,
+          "hp_por_tonelada": 69.57,
+          "aceleracao_0_60mph_s": 16.5
+        },
+        "carro_b": {
+          "modelo": "honda accord lx (78)",
+          "origem": "Japão",
+          "cilindros": 4,
+          "km_l": 12.54,
+          "peso_kg": 968,
+          "potencia_hp": 68,
+          "hp_por_tonelada": 70.22,
+          "aceleracao_0_60mph_s": 16.6
+        },
+        "distancia": 0.08
+      },
+      {
+        "carro_a": {
+          "modelo": "volkswagen jetta (81)",
+          "origem": "Europa",
+          "cilindros": 4,
+          "km_l": 14.03,
+          "peso_kg": 993,
+          "potencia_hp": 74,
+          "hp_por_tonelada": 74.49,
+          "aceleracao_0_60mph_s": 14.2
+        },
+        "carro_b": {
+          "modelo": "honda prelude (81)",
+          "origem": "Japão",
+          "cilindros": 4,
+          "km_l": 14.33,
+          "peso_kg": 1002,
+          "potencia_hp": 75,
+          "hp_por_tonelada": 74.82,
+          "aceleracao_0_60mph_s": 14.4
+        },
+        "distancia": 0.12
+      },
+      {
+        "carro_a": {
+          "modelo": "mazda glc 4 (81)",
+          "origem": "Japão",
+          "cilindros": 4,
+          "km_l": 14.5,
+          "peso_kg": 900,
+          "potencia_hp": 68,
+          "hp_por_tonelada": 75.52,
+          "aceleracao_0_60mph_s": 16.0
+        },
+        "carro_b": {
+          "modelo": "ford escort 4w (81)",
+          "origem": "EUA",
+          "cilindros": 4,
+          "km_l": 14.62,
+          "peso_kg": 928,
+          "potencia_hp": 65,
+          "hp_por_tonelada": 70.07,
+          "aceleracao_0_60mph_s": 16.2
+        },
+        "distancia": 0.15
+      },
+      {
+        "carro_a": {
+          "modelo": "pontiac sunbird coupe (77)",
+          "origem": "EUA",
+          "cilindros": 4,
+          "km_l": 10.42,
+          "peso_kg": 1243,
+          "potencia_hp": 88,
+          "hp_por_tonelada": 70.81,
+          "aceleracao_0_60mph_s": 16.0
+        },
+        "carro_b": {
+          "modelo": "ford mustang ii 2+2 (77)",
+          "origem": "EUA",
+          "cilindros": 4,
+          "km_l": 10.84,
+          "peso_kg": 1250,
+          "potencia_hp": 89,
+          "hp_por_tonelada": 71.22,
+          "aceleracao_0_60mph_s": 15.8
+        },
+        "distancia": 0.18
+      },
+      {
+        "carro_a": {
+          "modelo": "buick lesabre custom (72)",
+          "origem": "EUA",
+          "cilindros": 8,
+          "km_l": 5.53,
+          "peso_kg": 2042,
+          "potencia_hp": 155,
+          "hp_por_tonelada": 75.9,
+          "aceleracao_0_60mph_s": 13.5
+        },
+        "carro_b": {
+          "modelo": "oldsmobile delta 88 royale (72)",
+          "origem": "EUA",
+          "cilindros": 8,
+          "km_l": 5.1,
+          "peso_kg": 2021,
+          "potencia_hp": 160,
+          "hp_por_tonelada": 79.16,
+          "aceleracao_0_60mph_s": 13.5
+        },
+        "distancia": 0.19
+      }
+    ],
+    "pct_vizinho_mais_proximo_com": {
+      "mesmo nº de cilindros": 98.5,
+      "mesma origem": 74.9,
+      "mesma marca": 17.8,
+      "mesmo ano": 56.0
+    },
+    "distancia_media_entre_grupos_de_cilindros": {
+      "4x4": 2.13,
+      "6x6": 1.81,
+      "8x8": 2.02,
+      "4x6": 3.07,
+      "4x8": 5.42,
+      "6x8": 3.44
+    }
+  },
+  "afastamento_do_perfil_medio": {
+    "distancia_media_ao_perfil_medio": 2.46,
+    "mais_afastados": [
+      {
+        "modelo": "chevrolet impala (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 1975,
+        "potencia_hp": 220,
+        "hp_por_tonelada": 111.4,
+        "aceleracao_0_60mph_s": 9.0,
+        "distancia_ao_perfil_medio": 5.49,
+        "atributo_mais_extremo": "horsepower",
+        "z_desse_atributo": 3.03
+      },
+      {
+        "modelo": "pontiac catalina (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 2007,
+        "potencia_hp": 225,
+        "hp_por_tonelada": 112.1,
+        "aceleracao_0_60mph_s": 10.0,
+        "distancia_ao_perfil_medio": 5.45,
+        "atributo_mais_extremo": "horsepower",
+        "z_desse_atributo": 3.16
+      },
+      {
+        "modelo": "buick electra 225 custom (73)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.1,
+        "peso_kg": 2246,
+        "potencia_hp": 225,
+        "hp_por_tonelada": 100.19,
+        "aceleracao_0_60mph_s": 11.0,
+        "distancia_ao_perfil_medio": 5.44,
+        "atributo_mais_extremo": "horsepower",
+        "z_desse_atributo": 3.16
+      },
+      {
+        "modelo": "plymouth fury iii (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 1956,
+        "potencia_hp": 215,
+        "hp_por_tonelada": 109.92,
+        "aceleracao_0_60mph_s": 8.5,
+        "distancia_ao_perfil_medio": 5.43,
+        "atributo_mais_extremo": "horsepower",
+        "z_desse_atributo": 2.9
+      },
+      {
+        "modelo": "buick estate wagon (sw) (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 1400,
+        "potencia_hp": 225,
+        "hp_por_tonelada": 160.74,
+        "aceleracao_0_60mph_s": 10.0,
+        "distancia_ao_perfil_medio": 5.17,
+        "atributo_mais_extremo": "horsepower",
+        "z_desse_atributo": 3.16
+      }
+    ]
+  },
+  "outliers": {
+    "atributos_avaliados": [
+      "mpg",
+      "cylinders",
+      "displacement",
+      "horsepower",
+      "weight",
+      "acceleration",
+      "model_year",
+      "hp_por_tonelada"
+    ],
+    "iqr_por_atributo": {
+      "mpg": 1,
+      "horsepower": 11,
+      "acceleration": 7,
+      "hp_por_tonelada": 8
+    },
+    "zscore_maior_que_3_por_atributo": {
+      "horsepower": 5,
+      "acceleration": 2,
+      "hp_por_tonelada": 2
+    },
+    "carros_por_metodo": {
+      "IQR": 20,
+      "Z-score": 7,
+      "Isolation Forest (contamination=0.05)": 20
+    },
+    "carros_por_numero_de_metodos_que_apontam": {
+      "0": 373,
+      "1": 9,
+      "2": 10,
+      "3": 6
+    },
+    "criterio_atipico": "apontado por pelo menos 2 dos 3 métodos",
+    "total_atipicos": 16,
+    "atipicos": [
+      {
+        "modelo": "buick estate wagon (sw) (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 1400,
+        "potencia_hp": 225,
+        "hp_por_tonelada": 160.74,
+        "aceleracao_0_60mph_s": 10.0,
+        "metodos": 3,
+        "atributos_fora_do_padrao": "horsepower, hp_por_tonelada"
+      },
+      {
+        "modelo": "pontiac grand prix (73)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 6.8,
+        "peso_kg": 1940,
+        "potencia_hp": 230,
+        "hp_por_tonelada": 118.53,
+        "aceleracao_0_60mph_s": 9.5,
+        "metodos": 3,
+        "atributos_fora_do_padrao": "horsepower, hp_por_tonelada"
+      },
+      {
+        "modelo": "vw dasher (diesel) (80)",
+        "origem": "Europa",
+        "cilindros": 4,
+        "km_l": 18.45,
+        "peso_kg": 1059,
+        "potencia_hp": 48,
+        "hp_por_tonelada": 45.32,
+        "aceleracao_0_60mph_s": 23.7,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "acceleration"
+      },
+      {
+        "modelo": "buick electra 225 custom (73)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.1,
+        "peso_kg": 2246,
+        "potencia_hp": 225,
+        "hp_por_tonelada": 100.19,
+        "aceleracao_0_60mph_s": 11.0,
+        "metodos": 3,
+        "atributos_fora_do_padrao": "horsepower"
+      },
+      {
+        "modelo": "vw pickup (82)",
+        "origem": "Europa",
+        "cilindros": 4,
+        "km_l": 18.71,
+        "peso_kg": 966,
+        "potencia_hp": 52,
+        "hp_por_tonelada": 53.82,
+        "aceleracao_0_60mph_s": 24.6,
+        "metodos": 3,
+        "atributos_fora_do_padrao": "acceleration"
+      },
+      {
+        "modelo": "plymouth fury iii (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 1956,
+        "potencia_hp": 215,
+        "hp_por_tonelada": 109.92,
+        "aceleracao_0_60mph_s": 8.5,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "acceleration, horsepower, hp_por_tonelada"
+      },
+      {
+        "modelo": "chevrolet impala (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 1975,
+        "potencia_hp": 220,
+        "hp_por_tonelada": 111.4,
+        "aceleracao_0_60mph_s": 9.0,
+        "metodos": 3,
+        "atributos_fora_do_padrao": "horsepower, hp_por_tonelada"
+      },
+      {
+        "modelo": "pontiac catalina (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.95,
+        "peso_kg": 2007,
+        "potencia_hp": 225,
+        "hp_por_tonelada": 112.1,
+        "aceleracao_0_60mph_s": 10.0,
+        "metodos": 3,
+        "atributos_fora_do_padrao": "horsepower, hp_por_tonelada"
+      },
+      {
+        "modelo": "ford f250 (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 4.25,
+        "peso_kg": 2093,
+        "potencia_hp": 215,
+        "hp_por_tonelada": 102.71,
+        "aceleracao_0_60mph_s": 14.0,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "horsepower"
+      },
+      {
+        "modelo": "chevy c20 (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 4.25,
+        "peso_kg": 1985,
+        "potencia_hp": 200,
+        "hp_por_tonelada": 100.76,
+        "aceleracao_0_60mph_s": 15.0,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "horsepower"
+      },
+      {
+        "modelo": "amc ambassador dpl (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 6.38,
+        "peso_kg": 1746,
+        "potencia_hp": 190,
+        "hp_por_tonelada": 108.8,
+        "aceleracao_0_60mph_s": 8.5,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "acceleration, hp_por_tonelada"
+      },
+      {
+        "modelo": "mercury marquis (72)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 4.68,
+        "peso_kg": 2101,
+        "potencia_hp": 208,
+        "hp_por_tonelada": 98.98,
+        "aceleracao_0_60mph_s": 11.0,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "horsepower"
+      },
+      {
+        "modelo": "bmw 2002 (70)",
+        "origem": "Europa",
+        "cilindros": 4,
+        "km_l": 11.05,
+        "peso_kg": 1013,
+        "potencia_hp": 113,
+        "hp_por_tonelada": 111.51,
+        "aceleracao_0_60mph_s": 12.5,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "hp_por_tonelada"
+      },
+      {
+        "modelo": "chrysler new yorker brougham (73)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 5.53,
+        "peso_kg": 2148,
+        "potencia_hp": 215,
+        "hp_por_tonelada": 100.1,
+        "aceleracao_0_60mph_s": 11.0,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "horsepower"
+      },
+      {
+        "modelo": "dodge d200 (70)",
+        "origem": "EUA",
+        "cilindros": 8,
+        "km_l": 4.68,
+        "peso_kg": 1988,
+        "potencia_hp": 210,
+        "hp_por_tonelada": 105.65,
+        "aceleracao_0_60mph_s": 13.5,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "horsepower"
+      },
+      {
+        "modelo": "peugeot 504 (79)",
+        "origem": "Europa",
+        "cilindros": 4,
+        "km_l": 11.56,
+        "peso_kg": 1447,
+        "potencia_hp": 71,
+        "hp_por_tonelada": 49.07,
+        "aceleracao_0_60mph_s": 24.8,
+        "metodos": 2,
+        "atributos_fora_do_padrao": "acceleration"
+      }
+    ],
+    "observacao_qualidade": "buick estate wagon (sw) (70) tem 225 hp e peso registrado de 3086 lb (~1400 kg); outras peruas de 8 cilindros de 1971-72 na base pesam 3892 a 5140 lb, então o peso provavelmente foi registrado errado"
+  },
+  "medias_tipico_vs_atipico": {
+    "atípico: fraco/lento": {
+      "km_l": 16.24,
+      "peso_kg": 1157.42,
+      "horsepower": 57.0,
+      "hp_por_tonelada": 49.4,
+      "acceleration": 24.37,
+      "carros": 3
+    },
+    "atípico: potente": {
+      "km_l": 5.89,
+      "peso_kg": 1892.21,
+      "horsepower": 207.0,
+      "hp_por_tonelada": 110.88,
+      "acceleration": 11.04,
+      "carros": 13
+    },
+    "típico": {
+      "km_l": 10.09,
+      "peso_kg": 1330.31,
+      "horsepower": 100.99,
+      "hp_por_tonelada": 75.81,
+      "acceleration": 15.65,
+      "carros": 382
+    }
+  },
+  "por_origem": {
+    "EUA": {
+      "carros": 249,
+      "km_l_medio": 8.54,
+      "peso_kg_medio": 1525,
+      "hp_medio": 118.48,
+      "pct_8_cilindros": 41.37,
+      "atipicos": 12
+    },
+    "Europa": {
+      "carros": 70,
+      "km_l_medio": 11.86,
+      "peso_kg_medio": 1099,
+      "hp_medio": 80.49,
+      "pct_8_cilindros": 0.0,
+      "atipicos": 4
+    },
+    "Japão": {
+      "carros": 79,
+      "km_l_medio": 12.95,
+      "peso_kg_medio": 1008,
+      "hp_medio": 79.84,
+      "pct_8_cilindros": 0.0,
+      "atipicos": 0
+    }
+  },
+  "km_l_medio_por_ano": {
+    "1970": 7.52,
+    "1971": 9.03,
+    "1972": 7.96,
+    "1973": 7.27,
+    "1974": 9.65,
+    "1975": 8.62,
+    "1976": 9.17,
+    "1977": 9.94,
+    "1978": 10.23,
+    "1979": 10.67,
+    "1980": 14.33,
+    "1981": 12.9,
+    "1982": 13.48
+  }
+}

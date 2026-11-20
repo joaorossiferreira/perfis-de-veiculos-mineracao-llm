@@ -1,0 +1,17 @@
+id,origem,n_metodos,out_iqr,out_zscore,out_iforest,motivo,cylinders,km_l,peso_kg,horsepower,hp_por_tonelada,acceleration
+buick estate wagon (sw) (70),EUA,3,True,True,True,"horsepower, hp_por_tonelada",8,5.952016,1399.784912,225.0,160.73898073277704,10.0
+pontiac grand prix (73),EUA,3,True,True,True,"horsepower, hp_por_tonelada",8,6.802304,1940.466576,230.0,118.52819463353643,9.5
+buick electra 225 custom (73),EUA,3,True,True,True,horsepower,8,5.1017280000000005,2245.733992,225.0,100.1899605213795,11.0
+vw pickup (82),Europa,3,True,True,True,acceleration,4,18.706336,966.1509599999999,52.0,53.82181683077767,24.6
+chevrolet impala (70),EUA,3,True,True,True,"horsepower, hp_por_tonelada",8,5.952016,1974.939568,220.0,111.39581360597866,9.0
+pontiac catalina (70),EUA,3,True,True,True,"horsepower, hp_por_tonelada",8,5.952016,2007.1446,225.0,112.09954678900563,10.0
+vw dasher (diesel) (80),Europa,2,True,False,True,acceleration,4,18.4512496,1059.13732,48.0,45.31990242776074,23.7
+plymouth fury iii (70),EUA,2,True,False,True,"acceleration, horsepower, hp_por_tonelada",8,5.952016,1955.888704,215.0,109.92445508801303,8.5
+ford f250 (70),EUA,2,True,False,True,horsepower,8,4.2514400000000006,2093.32708,215.0,102.70731318299289,14.0
+chevy c20 (70),EUA,2,True,False,True,horsepower,8,4.2514400000000006,1984.918592,200.0,100.75979982558398,15.0
+amc ambassador dpl (70),EUA,2,True,False,True,"acceleration, hp_por_tonelada",8,6.37716,1746.3292,190.0,108.79964671036825,8.5
+mercury marquis (72),EUA,2,True,False,True,horsepower,8,4.676584,2101.491736,208.0,98.97731046799606,11.0
+bmw 2002 (70),Europa,2,True,False,True,hp_por_tonelada,4,11.053744,1013.324528,113.0,111.5141268938079,12.5
+chrysler new yorker brougham (73),EUA,2,True,False,True,horsepower,8,5.526872,2147.75812,215.0,100.10438233147038,11.0
+dodge d200 (70),EUA,2,True,False,True,horsepower,8,4.676584,1987.640144,210.0,105.65292748484556,13.5
+peugeot 504 (79),Europa,2,True,True,False,acceleration,4,11.5639168,1446.95848,71.0,49.068443207852106,24.8
